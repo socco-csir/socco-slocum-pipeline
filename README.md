@@ -23,17 +23,12 @@ This repository provides a reproducible, configuration-driven workflow to:
 *Scope is subject to change*
 
 
-## Submodules
+This repository uses the GEOMAR glider toolbox as part of the processing pipeline.
 
-This repository uses the GEOMAR glider toolbox as a git submodule.
-
-Initially, we will create a baseline dataset following the
+The idea is initially to create a baseline dataset following the
   [GEOMAR Slocum Processing Toolbox](https://git.geomar.de/open-source/geomar_glider_toolbox/-/blob/main/glider/README.md),
-  the longer-term aim is to develop a single, Python-based processing pipeline.
+  with the longer-term aim is to develop a single, Python-based processing pipeline.
 
-After cloning, run:
-
-    git submodule update --init --recursive
 
 ## Data levels (working definitions)
 - **L0**: Raw Slocum glider data as recorded by the platform/instrument files.
