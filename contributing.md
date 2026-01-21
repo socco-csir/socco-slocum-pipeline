@@ -1,5 +1,3 @@
-# CONTRIBUTING.md
-
 # Contributing
 
 Thanks for contributing! Contributions of all kinds are welcome:
