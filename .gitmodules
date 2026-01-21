@@ -1,3 +1,0 @@
-[submodule "matlab/geomar_glider_toolbox"]
-	path = matlab/geomar_glider_toolbox
-	url = git@git.geomar.de:open-source/geomar_glider_toolbox.git
