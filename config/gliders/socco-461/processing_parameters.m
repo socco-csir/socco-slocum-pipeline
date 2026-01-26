@@ -179,7 +179,7 @@ op.suna_installed = 0;
 % G2 short deep      57.8
 % G2 long deep       72.4
 % G2 SUNA            59.3
-op.glider_volume = (59.3)/1000;   % volume in m^3 %update
+op.glider_volume = (48.0107/1000);   % volume in m^3 %update
 
 % frontal area of the glider
 % number taken from Merckelbach et al.
@@ -189,3 +189,4 @@ op.frontal_area = 0.038; % in m^2
 % effective wing area 
 % number taken from Merckelbach et al.
 op.effective_wing_area = 0.1;  % in m^3
+
