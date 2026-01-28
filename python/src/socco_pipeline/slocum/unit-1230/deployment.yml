@@ -100,6 +100,15 @@ netcdf_variables:
     units:         seconds since 1970-01-01T00:00:00Z
     axis:          T
     observation_type: "measured"
+    
+  time_ctd:
+    source:   sci_ctd41cp_timestamp
+    long_name:     Time measured by ctd
+    standard_name: time measured by ctd
+    calendar:      gregorian
+    units:         seconds since 1970-01-01T00:00:00Z
+    axis:          T
+    observation_type: "measured"
 
   latitude:
     source:  m_lat
@@ -146,6 +155,12 @@ netcdf_variables:
     long_name:    glider roll angle
     standard_name: platform_roll_angle
     units:        degrees
+
+  oil_volume:
+    source:  m_de_oil_vol
+    long_name:    measured oil volume in bladder
+    standard_name: measured oil volume
+    units:        mL
 
   # profile info:
   waypoint_latitude:

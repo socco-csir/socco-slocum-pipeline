@@ -6,6 +6,7 @@ m_heading
 m_pitch
 m_roll
 m_depth
+m_de_oil_vol
 c_wpt_lat
 c_wpt_lon
 sci_water_cond
@@ -16,5 +17,7 @@ sci_flbbbbv1_bb1_sig
 sci_flbbbbv1_bb2_sig
 sci_bsipar_par
 sci_oxy4_oxygen
-sci_oxy4_saturation
+sci_oxy4_temp
+sci_oxy4_timestamp
 sci_suna_nitrate_concentration
+sci_ctd41cp_timestamp
