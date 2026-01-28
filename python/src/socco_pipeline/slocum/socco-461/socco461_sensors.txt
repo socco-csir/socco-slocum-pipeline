@@ -15,4 +15,3 @@ sci_bb2flsv8_chl_sig
 sci_bb2flsv8_b470_sig
 sci_bb2flsv8_b700_sig
 sci_oxy4_oxygen
-sci_oxy4_saturation
