@@ -23,13 +23,6 @@ This repository provides a reproducible, configuration-driven workflow to:
 *Scope is subject to change*
 
 
-This repository uses the GEOMAR glider toolbox as part of the processing pipeline.
-
-The idea is initially to create a baseline dataset following the
-  [GEOMAR Slocum Processing Toolbox](https://git.geomar.de/open-source/geomar_glider_toolbox/-/blob/main/glider/README.md),
-  with the longer-term aim is to develop a single, Python-based processing pipeline.
-
-
 ## Data levels (working definitions)
 - **L0**: Raw Slocum glider data as recorded by the platform/instrument files.
 - **OG1.0**: OceanGliders Level-1 format target (harmonised variables, metadata, and QC flags).
