@@ -10,6 +10,14 @@ m_roll
 m_fin
 m_thruster_power
 m_de_oil_vol
+m_gps_lat
+m_gps_lon
+m_gps_invalid_lat
+m_gps_invalid_lon
+m_gps_toofar_lat
+m_gps_toofar_lon
+m_gps_ignored_lat
+m_gps_ignored_lon
 c_wpt_lat
 c_wpt_lon
 sci_water_cond
