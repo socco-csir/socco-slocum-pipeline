@@ -13,7 +13,7 @@ metadata:
   # date_created etc: added automatically
   # numbers must be eenclosed by strings so YAML keeps as strings
   deployment_id: '1'
-  deployment_name: 'wam_sbus_19112025_21012026'
+  deployment_name: 'wam_sbus_test'
   deployment_start: '2025-11-19'
   deployment_end: '2026-01-21'
   format_version: IOOS_Glider_NetCDF_v2.0.nc
@@ -112,7 +112,7 @@ netcdf_variables:
     standard_name: latitude
     units:        degrees_north
     axis:         Y
-    comment:     "Estimated between surface fixes"
+    comment:     "Estimated between surface fixes (dead-reckoning+GPS)"
     observation_type: measured
     platform:     platform
     reference:    WGS84
@@ -126,13 +126,41 @@ netcdf_variables:
     standard_name: longitude
     units:        degrees_east
     axis:         X
-    comment:     "Estimated between surface fixes"
+    comment:     "Estimated between surface fixes (dead-reckoning+GPS)"
     observation_type: measured
     platform:     platform
     reference:    WGS84
     valid_max:    180.0
     valid_min:    -180.0
     coordinate_reference_frame:  urn:ogc:crs:EPSG::4326
+
+
+  ## add a bunch of additional gps fixes
+  lon_gps:
+    source:  m_gps_lon
+    comment:  "GPS"
+
+  lat_gps:
+    source:  m_gps_lat
+    comment:  "GPS"
+
+  inv_lat:
+    source: m_gps_invalid_lat
+
+  inv_lon:
+    source: m_gps_invalid_lon
+
+  far_lat:
+    source: m_gps_toofar_lat
+
+  far_lon:
+    source: m_gps_toofar_lon
+
+  ign_lat: 
+    source: m_gps_ignored_lat
+  
+  ign_lon:
+    source: m_gps_ignored_lon
 
   heading:
     source:  m_heading
@@ -188,7 +216,7 @@ netcdf_variables:
     source:  sci_water_cond
     long_name:    water conductivity
     standard_name: sea_water_electrical_conductivity
-    units:        S m-1
+    units:        mS cm-1
     instrument:    instrument_ctd
     valid_min:    0.
     valid_max:    10.
